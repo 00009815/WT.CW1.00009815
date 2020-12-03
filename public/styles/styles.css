@@ -1,0 +1,130 @@
+/* universal styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*styling for the header*/
+header {
+    display: flex;
+    text-decoration: none;
+    color: red;
+    background-color: black;
+    padding: 1% 0;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+main{
+
+    margin: 1% 2%;
+    overflow: hidden;
+}
+
+/*styling for the navigarional bar*/
+.selected {
+    color: tomato;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+nav ul li {
+    list-style-type: none;
+    padding: 2% 5%;
+}
+
+/*styling for the logo*/
+#logo {
+    margin: 0 4%;
+    font-size: 2em;
+    text-decoration: none;
+    color: rgba(255, 0, 0, 0.651);
+}
+
+/*universal styling for lists*/
+ul{
+    display: flex;
+}
+li a {
+    text-decoration: none;
+    color:white;
+}
+
+
+.list-titles{
+    float: right;
+    width: 90%;
+}
+
+/*styling the poster lists*/
+.poster-box{
+    display:flex;
+    justify-content: center; 
+}
+/* .poster{
+    height: 210px;
+    width: 140px;
+    margin: 1% auto;
+    background-color: tomato;
+} */
+.posters{
+    float: right;
+    width: 90%;
+}
+.poster-box img {
+    width: 200px;
+    height: 309px;
+}
+.poster-box ul{
+    display:flex;
+    justify-content: center;
+}
+.poster-box li{
+    margin: 1% 5%;
+    list-style-type: none;
+}
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 3px;
+    max-width: 220px;
+}
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+/*styling for category column*/
+aside {
+    width: 10%;
+    height: 800px;
+    float: left;
+}
+.category-box{
+    display: flex;
+    flex-direction: column;
+}
+.category-box li{
+    margin: 5% 4%;
+    list-style-type: none;
+}
+
+/*styling for the footer*/
+footer{
+    background-color: black;
+    color: white;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+}
+
+/* here experiments start */
+
+
