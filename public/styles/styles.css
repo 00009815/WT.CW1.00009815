@@ -32,8 +32,11 @@ nav ul li a:hover{
     text-decoration: underline;
 }
 nav ul li {
-    list-style-type: none;
+    
     padding: 2% 5%;
+}
+nav ul li a{
+    color:white;
 }
 
 /*styling for the logo*/
@@ -47,10 +50,11 @@ nav ul li {
 /*universal styling for lists*/
 ul{
     display: flex;
+    list-style-type: none;
 }
 li a {
     text-decoration: none;
-    color:white;
+    
 }
 
 
@@ -114,6 +118,15 @@ aside {
 .category-box li{
     margin: 5% 4%;
     list-style-type: none;
+}
+
+.social-media-contacts h2{
+    font-size: 2em;
+}
+.social-media-contacts ul{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
 }
 
 /*styling for the footer*/

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movies</title>
+    <title>Series</title>
     <link rel="stylesheet" href="/public/styles/styles.css">
 </head>
 <body>
@@ -12,8 +12,8 @@
         <nav> 
             <ul>
                 <li><a href="/index.html">Home</a></li>
-                <li><a href="series.html">Series</a></li>
-                <li><a class="selected" href="movies.html">Movies</a></li>
+                <li><a class="selected" href="series.html">Series</a></li>
+                <li><a href="movies.html">Movies</a></li>
                 <li><a href="#">Categories</a></li>
                 <li><a href="#">Saved</a></li>
                 <li><a href="contacts.html">Contacts</a></li>
@@ -21,8 +21,6 @@
         </nav>
     </header>
     <main>
-        <h2 class="list-titles">Recent movies:</h2>
-        <div id="movie-posters"></div>
         <aside>
             <h2>Categories:</h2>
             <ul class="category-box">
@@ -33,12 +31,16 @@
                 <li>Drama</li>
                 <li>Historical</li>
             </ul> 
-    </aside>
+    </aside>  
+        <div id="series-posters">
+            <h2 class="list-titles">Recent TV Series:</h2>
+        </div>
     </main>
     <footer>
         <p>This website was created to fulfill Web Technology module’s requirements and does not
             represent an actual company or service <br> ID 00009815</p> 
     </footer>
     <script src="public/scripts/main.js"></script>
+    
 </body>
 </html>

@@ -23,13 +23,47 @@ let movies = [
         page : "index.html",
         genre: "adventure"
     },
-    stragelove = {
+    strangelove = {
         name : "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
         poster : "public/images/posters/strangelove.jpg",
         page : "index.html",
         genre: "comedy"
     }
+],
+ series = [
+    planet_earth = {
+        name : "Planet Earth II",
+        poster : "public/images/posters/planet_earth.jpg",
+        page : "index.html",
+        genre : "Historical"
+    },
+    breaking_bad = {
+        name : "Breaking Bad",
+        poster : "public/images/posters/breaking_bad.jpg",
+        page : "index.html",
+        genre : "drama"
+    },
+    chernobyl = {
+        name : "Chernobyl",
+        poster : "public/images/posters/chernobyl.jpg",
+        page : "index.html",
+        genre: "biography"
+    },
+    firefly = {
+        name : "Firefly",
+        poster : "public/images/posters/firefly.jpg",
+        page : "index.html",
+        genre: "adventure"
+    },
+    rick_and_morty = {
+        name : "Rick and Morty",
+        poster : "public/images/posters/rick_and_morty.jpg",
+        page : "index.html",
+        genre: "comedy"
+    }
 ]
+
+
 
 function createList(array)  //function to create list of posters
 {
@@ -68,6 +102,18 @@ function createList(array)  //function to create list of posters
 
     return poster_table;
 }
-document.getElementById('releases-posters').appendChild(createList(movies)); //addition the generated list to the page
-document.getElementById('series-posters').appendChild(createList(movies));
-document.getElementById('movie-posters').appendChild(createList(movies));
+
+let pathname = window.location.pathname;
+switch(pathname) {
+   case "/index.html" :
+        document.getElementById('releases-posters').appendChild(createList(movies)); 
+        document.getElementById('series-posters').appendChild(createList(series));
+        document.getElementById('movie-posters').appendChild(createList(movies));
+        break;
+   case "/movies.html" :
+        document.getElementById('movie-posters').appendChild(createList(movies));
+       break;
+    case "/series.html" : 
+        document.getElementById('series-posters').appendChild(createList(series));
+        break;
+}
