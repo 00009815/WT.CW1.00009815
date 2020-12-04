@@ -69,11 +69,10 @@ function createList(array)  //function to create list of posters
 {
     //list of posters
     
-    let poster_table = document.createElement('div'),
-    poster_box = document.createElement('div'),
+    let poster_box = document.createElement('div'),
     list = document.createElement('ul');
     
-    poster_table.className = "posters";
+    
     poster_box.className = "poster-box";
 
     for(let i = 0; i < array.length; i++)
@@ -98,9 +97,9 @@ function createList(array)  //function to create list of posters
     }
 
     poster_box.appendChild(list);
-    poster_table.appendChild(poster_box);
+    
 
-    return poster_table;
+    return poster_box;
 }
 
 let pathname = window.location.pathname;

@@ -6,8 +6,14 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*styling for the header*/
-header {
+main{
+    margin: 1% 2%;
+    display: flex; 
+    padding-bottom: 4.5rem;
+} 
+
+/* styling for the header */
+ header {
     display: flex;
     text-decoration: none;
     color: red;
@@ -17,20 +23,25 @@ header {
     margin-bottom: 3em;
 }
 
-main{
-
-    margin: 1% 2%;
-    overflow: hidden;
+/*universal styling for lists*/
+ul{
+    display: flex;
+    list-style-type: none;
 }
 
-/*styling for the navigarional bar*/
-.selected {
+a {
+    text-decoration: none;
+    color: tomato;
+}
+a:hover{
+    text-decoration: underline;
+}
+/* styling for the navigarional bar */
+ .selected {
     color: tomato;
     font-weight: bold;
 }
-nav ul li a:hover{
-    text-decoration: underline;
-}
+
 nav ul li {
     
     padding: 2% 5%;
@@ -39,7 +50,7 @@ nav ul li a{
     color:white;
 }
 
-/*styling for the logo*/
+/* styling for the logo */
 #logo {
     margin: 0 4%;
     font-size: 2em;
@@ -47,36 +58,16 @@ nav ul li a{
     color: rgba(255, 0, 0, 0.651);
 }
 
-/*universal styling for lists*/
-ul{
+
+
+
+ 
+ 
+ .poster-box-container{
+    width: 90%;
     display: flex;
-    list-style-type: none;
-}
-li a {
-    text-decoration: none;
-    
-}
-
-
-.list-titles{
-    float: right;
-    width: 90%;
-}
-
-/*styling the poster lists*/
-.poster-box{
-    display:flex;
-    justify-content: center; 
-}
-/* .poster{
-    height: 210px;
-    width: 140px;
-    margin: 1% auto;
-    background-color: tomato;
-} */
-.posters{
-    float: right;
-    width: 90%;
+    flex-direction: column;
+    padding-left: 2%;
 }
 .poster-box img {
     width: 200px;
@@ -84,10 +75,10 @@ li a {
 }
 .poster-box ul{
     display:flex;
-    justify-content: center;
+    flex-wrap: wrap;
 }
 .poster-box li{
-    margin: 1% 5%;
+    margin: 1% 3%;
     list-style-type: none;
 }
 figure {
@@ -105,20 +96,19 @@ figcaption {
     text-align: center;
 }
 
-/*styling for category column*/
-aside {
-    width: 10%;
-    height: 800px;
-    float: left;
-}
+/* styling for category column */
+
 .category-box{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 .category-box li{
-    margin: 5% 4%;
+    margin: 1.5rem 2rem;
     list-style-type: none;
 }
+
 
 .social-media-contacts h2{
     font-size: 2em;
@@ -127,17 +117,66 @@ aside {
     display: flex;
     flex-direction: column;
     font-size: 1.5em;
+    
+}
+.social-media-contacts ul li {
+    margin-top: 3rem;
+}
+.contacts-page{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contacts-page iframe{
+    margin: 0 5rem;
 }
 
-/*styling for the footer*/
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+
+/* styling for the footer */
 footer{
     background-color: black;
     color: white;
-    padding-top: 2%;
-    padding-bottom: 2%;
     text-align: center;
-}
+    padding-top: .5rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 4.5rem; 
+} 
+
 
 /* here experiments start */
-
+/* .wrapper{
+    display:flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+.wrapper > * {
+    padding: 10px;
+    margin: 10;
+    flex: 1 100%;
+}
+@media all and (min-width: 800px){
+    .main{
+        flex:3;
+    }
+    aside{
+        order: 1;
+    }
+    .main{
+        order: 2;
+    }
+    footer{
+        order: 4;
+    }
+}
+@media all and (min-width: 600px){
+    aside{
+        flex: 1;
+    }
+} */
 
