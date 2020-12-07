@@ -6,24 +6,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-main{
-    margin: 1% 2%;
-    display: flex; 
-    padding-bottom: 4.5rem;
-} 
-
-/* styling for the header */
- header {
-    display: flex;
-    text-decoration: none;
-    color: red;
-    background-color: black;
-    padding: 1% 0;
-    align-items: center;
-    margin-bottom: 3em;
-}
-
-/*universal styling for lists*/
 ul{
     display: flex;
     list-style-type: none;
@@ -36,6 +18,30 @@ a {
 a:hover{
     text-decoration: underline;
 }
+
+main{
+    margin: 1% 2%;
+    display: flex; 
+    padding-bottom: 4.5rem;
+} 
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+
+/* styling for the header */
+ header {
+    display: flex;
+    text-decoration: none;
+    color: red;
+    background-color: black;
+    padding: 1% 0;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+
 /* styling for the navigarional bar */
  .selected {
     color: tomato;
@@ -55,14 +61,10 @@ nav ul li a{
     margin: 0 4%;
     font-size: 2em;
     text-decoration: none;
-    color: rgba(255, 0, 0, 0.651);
+    color: tomato;
 }
 
-
-
-
- 
- 
+ /* styling for the poster box */
  .poster-box-container{
     width: 90%;
     display: flex;
@@ -96,8 +98,8 @@ figcaption {
     text-align: center;
 }
 
-/* styling for category column */
 
+/* styling for category column */
 .category-box{
     display: flex;
     flex-direction: column;
@@ -109,7 +111,7 @@ figcaption {
     list-style-type: none;
 }
 
-
+/*styling for the contacts page*/
 .social-media-contacts h2{
     font-size: 2em;
 }
@@ -117,7 +119,6 @@ figcaption {
     display: flex;
     flex-direction: column;
     font-size: 1.5em;
-    
 }
 .social-media-contacts ul li {
     margin-top: 3rem;
@@ -130,11 +131,42 @@ figcaption {
 .contacts-page iframe{
     margin: 0 5rem;
 }
-
-#page-container {
-    position: relative;
-    min-height: 100vh;
-  }
+.categories{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 69vh;
+}
+.categories-box{
+    width: 40vw;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.genre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 170px;
+    height: 150px;
+    margin: 2% 6%;
+    border-radius: 10px;
+    background-color: tomato;
+    text-align: center;
+    transition: all 1s ease;
+}
+.genre:hover {
+    background-color: steelblue;
+    border-radius: 50%;
+    transform: rotate(360deg);
+}
+.genre a{
+    font-size: 2rem;
+    color:white;
+}
 
 /* styling for the footer */
 footer{
