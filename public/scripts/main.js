@@ -3,7 +3,7 @@ let movies = [
         name : "Troy",
         poster : "public/images/posters/troy.jpg",
         page : "index.html",
-        genre : "Historical"
+        genre : "historical"
     },
     shawshank = {
         name : "The Shawshank Redemption",
@@ -35,7 +35,7 @@ let movies = [
         name : "Planet Earth II",
         poster : "public/images/posters/planet_earth.jpg",
         page : "index.html",
-        genre : "Historical"
+        genre : "historical"
     },
     breaking_bad = {
         name : "Breaking Bad",
@@ -102,6 +102,21 @@ function createList(array)  //function to create list of posters
     return poster_box;
 }
 
+function genreSelection(genre)
+{
+    let allTitles = movies.concat(series);
+    let genreList = [];
+
+    for(let i = 0; i < allTitles.length; i++)
+    {
+        if (allTitles[i].genre === String(genre))
+        {   
+            genreList.push(allTitles[i]);
+        }
+    }
+    return genreList;
+}
+
 let pathname = window.location.pathname;
 switch(pathname) {
    case "/index.html" :
@@ -115,4 +130,7 @@ switch(pathname) {
     case "/series.html" : 
         document.getElementById('series-posters').appendChild(createList(series));
         break;
+    case "/genre.html" :
+        document.getElementById('movie-posters').appendChild(createList(genreSelection("historical")));
+       break;
 }

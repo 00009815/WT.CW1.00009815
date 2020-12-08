@@ -25,6 +25,7 @@ main{
     padding-bottom: 4.5rem;
 } 
 
+
 #page-container {
     position: relative;
     min-height: 100vh;
@@ -110,6 +111,21 @@ figcaption {
     margin: 1.5rem 2rem;
     list-style-type: none;
 }
+.category-box li a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    width: 150px;
+    height: 30px;
+    background-color: tomato;
+    border-radius: 10px;
+    font-size: 1.3rem;
+}
+.category-box li a:hover{
+    background-color:steelblue;
+    color: white;
+}
 
 /*styling for the contacts page*/
 .social-media-contacts h2{
@@ -131,6 +147,8 @@ figcaption {
 .contacts-page iframe{
     margin: 0 5rem;
 }
+
+/*styling for categories page*/
 .categories{
     display:flex;
     flex-direction: column;
