@@ -40,6 +40,7 @@ main{
     padding: 1% 0;
     align-items: center;
     margin-bottom: 3em;
+    width: 100%;
 }
 
 
@@ -49,13 +50,19 @@ main{
     font-weight: bold;
 }
 
-nav ul li {
-    
-    padding: 2% 5%;
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
-nav ul li a{
-    color:white;
-}
+nav .icon {
+    display: none;
+    padding: auto;
+  }
 
 /* styling for the logo */
 #logo {
@@ -186,6 +193,79 @@ figcaption {
     color:white;
 }
 
+/*styling for the details page*/
+#details-page{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 5%;
+}
+#details-page img{
+    width: 270px;
+    height: 398px;
+    border: thin #c0c0c0 solid;
+    padding: 3px;
+    margin-right: 3%;
+}
+#details-page h2{
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+#details-page p{
+    font-size: 1.5rem;
+    max-width: 40vw;
+}
+#details-page iframe{
+    border: thin #c0c0c0 solid;
+    padding: 3px;
+    margin-left: 3%;
+}
+#details-main{
+    display: block;
+}
+
+/*styling for comments*/
+#label{
+    font-size: 1.5rem;
+}
+#input{
+    width: 50vw;
+    height: 10vh;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+.btn {
+    background-color: tomato;
+    border: none;
+    color: #fff;
+    outline: none;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .comments{
+      margin: 30px 0;
+  }
+  .comment-box{
+    background: #eee;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+  .comment-item{
+    align-items: center;
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  .comment-text{
+    font-size: 1.2rem;
+    max-width: 77%;
+  }
+
+
 /* styling for the footer */
 footer{
     background-color: black;
@@ -198,7 +278,30 @@ footer{
     height: 4.5rem; 
 } 
 
-
+@media screen and (max-width: 600px) {
+    nav a:not(:first-child) {display: none;}
+    nav a.icon {
+      float: right;
+      display: block;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+  
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+         top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        }
+    }
 /* here experiments start */
 /* .wrapper{
     display:flex;

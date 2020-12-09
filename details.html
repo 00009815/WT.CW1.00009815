@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movies</title>
+    <title>Details</title>
     <link rel="stylesheet" href="/public/styles/styles.css">
 </head>
 <body>
     <div id="page-container">
     <header>  
-        <a id="logo" href="index.html">Kvik</a>
+        <a id="logo" href="/index.html">Kvik</a>
         <nav id="myTopnav"> 
             <a href="/index.html">Home</a>
             <a href="series.html">Series</a>
-            <a class="selected" href="movies.html">Movies</a>
+            <a href="movies.html">Movies</a>
             <a href="categories.html">Categories</a>
             <a href="#">Saved</a>
             <a href="contacts.html">Contacts</a>
@@ -22,21 +22,24 @@
               </a>
     </nav>
     </header>
-    <main>      
-        <aside>
-            <h2>Categories:</h2>
-            <ul class="category-box">
-                <li><a href="genre.html">Adventure</a></li>
-                <li><a href="genre.html">Biography</a></li>
-                <li><a href="genre.html">Comedy</a></li>
-                <li><a href="genre.html">Drama</a></li>
-                <li><a href="genre.html">Historical</a></li>
-            </ul> 
-        </aside>
-        <div class="poster-box-container">
-            <h2 class="list-titles">Recent movies:</h2>
-            <div id="movie-posters"></div>
-            </div>
+    <main id="details-main">
+        <article id="details-page">
+            <img src="" alt="" id="movie-poster">
+            <section>
+                <h2 id="movie-name"></h2>
+                <p id="movie-description"></p>
+                <button class="btn" type="button">Save</button>
+            </section>
+            <iframe width="760" height="415" src="https://www.youtube.com/embed/znTLzRJimeY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
+        <form>
+            <label id="label">Comment:</label><br>
+            <input id="input" type="text">
+            <button id="send-btn" class="btn" type="button">Send</button>
+         </form> 
+        <section class="comments">
+            <ul id="comment-list" class="comment-box"></ul>
+        </section>
     </main>
     <footer>
         <p>This website was created to fulfill Web Technology module’s requirements and does not

@@ -7,18 +7,20 @@
     <link rel="stylesheet" href="/public/styles/styles.css">
 </head>
 <body>
+    <div id="page-container">
     <header>  
         <a id="logo" href="/index.html">Kvik</a>
-        <nav> 
-            <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="series.html">Series</a></li>
-                <li><a href="movies.html">Movies</a></li>
-                <li><a class="selected" href="categories.html">Categories</a></li>
-                <li><a href="#">Saved</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
-            </ul>
-        </nav>
+        <nav id="myTopnav"> 
+            <a href="/index.html">Home</a>
+            <a href="series.html">Series</a>
+            <a href="movies.html">Movies</a>
+            <a class="selected" href="categories.html">Categories</a>
+            <a href="#">Saved</a>
+            <a href="contacts.html">Contacts</a>
+            <a href="javascript:void(0);" class="icon" onclick="navbar()">
+                <img src="public/images/icons/bars.png" alt="bars icon" width="25" height="25">
+              </a>
+    </nav>
     </header>
     <main>
         <div class="categories">
@@ -45,6 +47,6 @@
         <p>This website was created to fulfill Web Technology module’s requirements and does not
             represent an actual company or service <br> ID 00009815</p> 
     </footer>
-    
+    </div>
 </body>
 </html>
