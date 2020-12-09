@@ -82,6 +82,8 @@ let Input = document.getElementById('input');
 let Btn = document.getElementById('send-btn');
 let commentList = document.getElementById('comment-list');
 let comments = [];
+let SvBtn = document.getElementById('save-btn');
+let myStorage = window.localStorage;
 
 function createList(array)  //function to create list of posters
 {
@@ -142,6 +144,7 @@ function movieDetails(title)
     let poster = document.getElementById('movie-poster'),
     name = document.getElementById('movie-name'),
     description = document.getElementById('movie-description');
+    
 
     for(i=0; i < allTitles.length; i++)
     {
@@ -188,6 +191,7 @@ switch(pathname) {
     default: 
         console.log("Unknown");
 }
+
 
 //adding comments
 Btn.addEventListener('click', () => {

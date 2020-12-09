@@ -265,6 +265,21 @@ figcaption {
     max-width: 77%;
   }
 
+/*styling for about*/
+.about h2{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    
+    font-size: 1.5rem;
+    margin: auto;
+    flex-wrap: wrap;
+    
+}
 
 /* styling for the footer */
 footer{
@@ -288,6 +303,7 @@ footer{
         display: flex;
         flex-direction: column;
     }
+}
   
 @media screen and (max-width: 600px) {
     .topnav.responsive {position: relative;}
@@ -302,34 +318,3 @@ footer{
         text-align: left;
         }
     }
-/* here experiments start */
-/* .wrapper{
-    display:flex;
-    flex-flow: row wrap;
-    text-align: center;
-}
-.wrapper > * {
-    padding: 10px;
-    margin: 10;
-    flex: 1 100%;
-}
-@media all and (min-width: 800px){
-    .main{
-        flex:3;
-    }
-    aside{
-        order: 1;
-    }
-    .main{
-        order: 2;
-    }
-    footer{
-        order: 4;
-    }
-}
-@media all and (min-width: 600px){
-    aside{
-        flex: 1;
-    }
-} */
-
