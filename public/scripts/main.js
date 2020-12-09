@@ -82,8 +82,6 @@ let Input = document.getElementById('input');
 let Btn = document.getElementById('send-btn');
 let commentList = document.getElementById('comment-list');
 let comments = [];
-let SvBtn = document.getElementById('save-btn');
-let myStorage = window.localStorage;
 
 function createList(array)  //function to create list of posters
 {
@@ -169,6 +167,8 @@ function navbar() {
   }
 
     //switch for passing different parameters to the functions. Implement a better way of doing so later
+
+window.onload = function () {
 let pathname = window.location.pathname;
 switch(pathname) {
    case "/index.html" :
@@ -190,6 +190,7 @@ switch(pathname) {
         break;
     default: 
         console.log("Unknown");
+}
 }
 
 
